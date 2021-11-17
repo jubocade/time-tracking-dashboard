@@ -1,0 +1,62 @@
+.care {
+    position: relative;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.care > img {
+    position: absolute;
+    top: -1px;
+    right: 15px;
+}
+
+.care-info {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    height: 75%;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 8px;
+}
+
+.care-info:hover {
+    transition: 0.5s ease;
+    background-color: hsl(235, 45%, 61%);
+}
+
+.name-cont {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.hours-cont {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.hours-cont > div {
+    color: hsl(236, 100%, 87%);
+}
+
+@media(max-width: 852px) {
+    .care-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hours-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+    }
+}

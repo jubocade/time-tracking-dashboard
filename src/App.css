@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+@import url('https://fonts.google.com/specimen/Rubik');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(226, 43%, 10%);
 }
 
-.App-link {
-  color: #61dafb;
+.app main .wrapper {
+  width: 852px;
+  height: 350px;
+  margin: auto;
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "user work play study"
+  "user exercise social care";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.app main .wrapper > div {
+  border-radius: 12px;
+}
+
+.user {
+  grid-area: user;
+}
+
+.work {
+  grid-area: work;
+}
+
+.play {
+  grid-area: play;
+}
+
+.study {
+  grid-area: study;
+}
+
+.exercise {
+  grid-area: exercise;
+}
+
+.social {
+  grid-area: social;
+}
+
+.care {
+  grid-area: care;
+}
+
+@media(max-width: 852px) {
+  .app main .wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas: 
+    "user"
+    "work"
+    "play"
+    "study"
+    "exercise"
+    "social"
+    "care";
   }
 }

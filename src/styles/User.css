@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.user {
+  background-color: hsl(235, 46%, 20%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.user .user-profile {
+  background-color: hsl(235, 45%, 61%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  height: 70%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.user .user-profile .user-avatar > div {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 72px;
+}
+
+.user .user-profile .user-avatar > div > img {
+  width: 70px;
+}
+
+.time-frames-links {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.time-frames-links li {
+  display: block;
+  margin-top: 5px;
+  cursor: pointer;
+  color: hsl(236, 100%, 87%);
+}
+
+.time-frames-links li:hover {
+  color:  white;
+}
+
+@media(max-width: 852px) {
+  .user .user-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 20px;
+    height: 60%;
+    width: 100%;
+  }
+
+  .time-frames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .time-frames-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+}

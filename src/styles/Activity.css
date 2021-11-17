@@ -1,0 +1,50 @@
+.activity {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 75%;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 8px;
+}
+
+.activity:hover {
+    transition: 0.5s ease;
+    background-color: hsl(235, 45%, 61%);
+}
+
+.name-cont {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.hours-cont {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.hours-cont > div {
+    margin-top: 7px;
+    color: hsl(236, 100%, 87%);
+}
+
+@media(max-width: 852px) {
+    .activity {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hours-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+    }
+}
